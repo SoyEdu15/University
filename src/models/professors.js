@@ -33,15 +33,16 @@ const updateProfessor = async (id_p, professor) => {
 
 // Modelo para eliminar un profesor
 const deleteProfessor = async (id_p) => {
-    const result = await db.query('DELETE FROM Profesores WHERE id_p = $1 RETURNING *', [id_p]);
-    return result.rows[0];
+    const query = 'SELECT * FROM Imparte WHERE id_p = $1';
+    const { rows } = await db.query(query, [id_p]);
+    return rows; // Devuelve todas las asignaturas impartidas por el profesor
 };
 
 
 const asignaturasImpartidasPorProfesor = async (id_p) => {
-    const query = 'SELECT * FROM Imparte WHERE id_p = $1';
+    const query = 'SELECT * FROM Imparte WHERE id_p = $1 ';
     const { rows } = await db.query(query, [id_p]);
-    return rows[0];
+    return rows;
 };
 module.exports = {
     getAllProfessors,

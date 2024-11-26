@@ -1,0 +1,93 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "estudiantes",
+    "collectionId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+    "dateExported": "2024-11-26T14:02:56.219Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "25df70ed-c229-4fa2-b45d-19ecd6060192",
+            "colId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+            "containerId": "",
+            "name": "todos los estudiantes",
+            "url": "http://localhost:3000/api/estudiantes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-11-21T23:41:23.312Z",
+            "modified": "2024-11-25T16:28:17.677Z",
+            "headers": []
+        },
+        {
+            "_id": "cf7f9ca2-3f10-4b5f-bfa0-fa0751e78015",
+            "colId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+            "containerId": "",
+            "name": "estudiante por id",
+            "url": "http://localhost:3000/api/estudiantes/100",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-11-21T23:41:45.048Z",
+            "modified": "2024-11-25T16:28:23.914Z",
+            "headers": []
+        },
+        {
+            "_id": "e88b1e7a-c4c8-4d2d-bb9e-3af164eebf59",
+            "colId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+            "containerId": "",
+            "name": "editar estudiante",
+            "url": "http://localhost:3000/api/estudiantes/2",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-11-21T23:42:10.489Z",
+            "modified": "2024-11-25T16:28:28.815Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nom_e\": \"Estudiante b\",\n  \"dir_e\": \"Dirección B\",\n  \"tel_e\": \"3100000002\",\n  \"fech_nac\": \"2000-01-02T05:00:00.000Z\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "720cd3d9-da35-4490-b66b-9598d6eb70da",
+            "colId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+            "containerId": "",
+            "name": "crear estudiante",
+            "url": "http://localhost:3000/api/estudiantes",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-11-21T23:50:47.820Z",
+            "modified": "2024-11-25T16:28:33.297Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cod_e\": \"1001\",\n  \"nom_e\": \"Estudianteeee\",\n  \"dir_e\": \"Dirección B\",\n  \"tel_e\": \"3100000002\",\n  \"fech_nac\": \"2000-01-01\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a430029d-1a6a-4329-8ef2-b900845fe81d",
+            "colId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+            "containerId": "",
+            "name": "eliminar estudiante",
+            "url": "http://localhost:3000/api/students/101",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-11-21T23:53:48.142Z",
+            "modified": "2024-11-25T01:08:31.053Z",
+            "headers": []
+        },
+        {
+            "_id": "f30d8345-f7ec-4c59-848b-303502b0c914",
+            "colId": "8204d0f3-8509-48f2-8b84-c8cc45732bef",
+            "containerId": "",
+            "name": "asignaturas por estudiantes",
+            "url": "http://localhost:3000/api/estudiantes/1/asignaturas",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-11-25T01:32:32.517Z",
+            "modified": "2024-11-25T16:29:02.643Z",
+            "headers": []
+        }
+    ],
+    "ref": "k-e-FyovVp5c0d8XLEFln60aDNA7Kbm4vnP3VG2vcWig6niIY5ebUOwhOg-H3mdzaqZPFQdy_Bl-0ys1NLBinA"
+}

@@ -54,7 +54,7 @@ const obtenerEstudiantePorAsignatura = async (cod_a) => {
 const profesoresImpartenAsignatura = async (cod_a) => {
     const query = 'SELECT * FROM Imparte WHERE cod_a = $1';
     const { rows } = await db.query(query, [cod_a]);
-    return rows[0];
+    return rows;
 };
 
 const asignarProfeorAsignatura = async (grupo, id_p, cod_a, horario) => {

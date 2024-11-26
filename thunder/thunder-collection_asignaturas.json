@@ -1,0 +1,122 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "asignaturas",
+    "collectionId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+    "dateExported": "2024-11-26T14:27:18.012Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4f1e52e2-3687-4a39-a154-7416f597641e",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "Crear Asignatura",
+            "url": "http://localhost:3000/api/asignaturas/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-25T03:26:26.853Z",
+            "modified": "2024-11-25T03:30:10.583Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cod_a\":\"130\",\n  \"nom_a\":\"Prueba\",\n  \"int_h\":\"3\",\n  \"creditos_a\":\"2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0a485d1b-0983-4d9f-b5a2-18c769150009",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "Obtener todas las asignaturas",
+            "url": "http://localhost:3000/api/asignaturas",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-25T03:30:50.489Z",
+            "modified": "2024-11-25T03:31:42.382Z",
+            "headers": []
+        },
+        {
+            "_id": "78755f57-f7ee-43b1-9c9b-7289d688008e",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "Obtener una asignatura",
+            "url": "http://localhost:3000/api/asignaturas/130",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-11-25T03:31:22.095Z",
+            "modified": "2024-11-25T03:31:35.484Z",
+            "headers": []
+        },
+        {
+            "_id": "69008a47-c203-4bfb-868a-c64b7aa2fee2",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "Obtener estudiantes de una asignatura",
+            "url": "http://localhost:3000/api/asignaturas/101/estudiantes",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-11-25T03:32:29.866Z",
+            "modified": "2024-11-25T03:32:46.839Z",
+            "headers": []
+        },
+        {
+            "_id": "e1ab3219-f540-4b6b-afac-af83aaaa7108",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "actualizar una asignatura",
+            "url": "http://localhost:3000/api/asignaturas/130",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-11-25T03:33:30.283Z",
+            "modified": "2024-11-25T03:34:50.838Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nom_a\":\"Prueba actualizada\",\n  \"int_h\":\"3\",\n  \"creditos_a\":\"2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a12c8699-81e9-4e42-9179-7446c251ad58",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "Eliminar una asignatura ",
+            "url": "http://localhost:3000/api/asignaturas/130",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-11-25T03:44:55.375Z",
+            "modified": "2024-11-25T03:45:24.399Z",
+            "headers": []
+        },
+        {
+            "_id": "7b3be92c-0aff-4509-81ac-ccbe39d1032a",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "Eliminar una asignatura  Copy",
+            "url": "http://localhost:3000/api/asignaturas/102/profesores",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-11-25T14:13:46.345Z",
+            "modified": "2024-11-26T14:26:10.201Z",
+            "headers": []
+        },
+        {
+            "_id": "5f9a1156-9e1f-4c58-bea9-0a4ad782171c",
+            "colId": "0617d96f-5ee4-49e8-9270-c012e09c7fe1",
+            "containerId": "",
+            "name": "profesores que imparten una asignatura",
+            "url": "http://localhost:3000/api/asignaturas/103/profesor/2",
+            "method": "POST",
+            "sortNum": 95000,
+            "created": "2024-11-25T16:54:02.512Z",
+            "modified": "2024-11-26T02:28:57.993Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"grupo\": \"1\",\n    \"horario\": \"Lunes 9:00 - 11:00\"\n}\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "nXw3Tak5xTjj8KPFbPbpP9gasr1EVAmmZ5c-kKKu15iHfctF0dMY0Yx97MMm40rvpIjhMwnnhyT3xUxLf5TehQ"
+}

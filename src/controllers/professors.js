@@ -51,21 +51,29 @@ const updateProfessorData = async (req, res) => {
 // Eliminar un profesor
 const deleteProfessorData = async (req, res) => {
     const { id_p } = req.params;
+
     try {
-        await pool.query('DELETE FROM Imparte WHERE id_p = $1', [id_p]);
+        // Llama a la función para eliminar el profesor
+        const deletedProfessor = await profesorModelo.deleteProfessor(id_p);
 
-        const result = await pool.query('DELETE FROM Profesores WHERE id_p = $1 RETURNING *', [id_p]);
-
-        if (result.rows.length === 0) {
-            return res.status(404).json({ error: 'Profesor no encontrado' });
+        // Verifica si se encontró y eliminó el profesor
+        if (!deletedProfessor) {
+            return res.status(404).json({ message: 'Profesor no encontrado' });
         }
 
-        res.status(200).json({ message: 'Profesor eliminado correctamente', professor: result.rows[0] });
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).json({ error: 'Error al eliminar el profesor' });
+        // Respuesta exitosa
+        return res.status(200).json({
+            message: 'Profesor eliminado exitosamente',
+            data: deletedProfessor
+        });
+
+    } catch (error) {
+        // Manejo de errores
+        console.error(error);
+        return res.status(500).json({ message: 'Error del servidor', error: error.message });
     }
 };
+
 const asignaturasImpartidasPorProfesor = async (req, res) => {
     const { id_p } = req.params;
     try {

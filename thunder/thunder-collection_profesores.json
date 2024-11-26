@@ -1,0 +1,93 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "profesores",
+    "collectionId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+    "dateExported": "2024-11-26T14:25:04.705Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c6659c22-77e0-42a9-a04a-08c085fa246c",
+            "colId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+            "containerId": "",
+            "name": "todos los profesores",
+            "url": "http://localhost:3000/api/profesores",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-11-21T23:45:59.523Z",
+            "modified": "2024-11-25T16:29:47.737Z",
+            "headers": []
+        },
+        {
+            "_id": "0538aa7d-dd61-4719-864f-2376457233db",
+            "colId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+            "containerId": "",
+            "name": "profesor por id",
+            "url": "http://localhost:3000/api/profesores/5",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-11-21T23:47:49.656Z",
+            "modified": "2024-11-25T16:29:58.961Z",
+            "headers": []
+        },
+        {
+            "_id": "7ec21fb8-d0d0-4365-9bc7-a87a3f1f52be",
+            "colId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+            "containerId": "",
+            "name": "Actualizar profesor",
+            "url": "http://localhost:3000/api/profesores/5",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-11-26T14:03:32.954Z",
+            "modified": "2024-11-26T14:04:43.404Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"nom_p\": \"Profesor Ea\",\r\n  \"dir_p\": \"Calle 5\",\r\n  \"tel_p\": \"3001234571\",\r\n  \"profesion\": \"Literatura\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6d8a1ff2-2aa1-4459-ba36-9d680bcec789",
+            "colId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+            "containerId": "",
+            "name": "A;adir profesor",
+            "url": "http://localhost:3000/api/profesores",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-11-26T14:05:24.687Z",
+            "modified": "2024-11-26T14:05:50.241Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id_p\": \"100\",\r\n  \"nom_p\": \"Profesor 100\",\r\n  \"dir_p\": \"Calle 5\",\r\n  \"tel_p\": \"3001234571\",\r\n  \"profesion\": \"Literatura\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "08f01bd7-4aae-438f-abe6-595203ffefda",
+            "colId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+            "containerId": "",
+            "name": "A;adir profesor Copy",
+            "url": "http://localhost:3000/api/profesores/100",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-11-26T14:06:34.648Z",
+            "modified": "2024-11-26T14:06:53.456Z",
+            "headers": []
+        },
+        {
+            "_id": "368aa849-a8bf-433b-bfe0-2ad4e52cc7ec",
+            "colId": "399b90ef-b255-4b4f-85aa-e7ac71993527",
+            "containerId": "",
+            "name": "asignaturas impartidas por un profesor",
+            "url": "http://localhost:3000/api/profesores/3/asignaturas",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-11-26T14:10:30.595Z",
+            "modified": "2024-11-26T14:22:52.606Z",
+            "headers": []
+        }
+    ],
+    "ref": "KQRtUqqDFMq8h_t_tFoZ_0Sx2ob_if6EfOZzAaCHriZuqByqro12VE5AxxCb7ywO5wjzJ3Hrau8dSkGDdxJmWQ"
+}

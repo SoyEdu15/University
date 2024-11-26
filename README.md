@@ -8,6 +8,7 @@ Este proyecto consta de varios archivos .js en los cuales estamos implementando 
 
   - [@Eduard Murillo](https://github.com/SoyEdu15)
   - [@Darcy Sosa](https://github.com/dcsosag)
+  - [@Santiago](https://github.com/SantiagoO2006)
   </div>
   
   ---
