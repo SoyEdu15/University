@@ -15,9 +15,7 @@ Este proyecto consta de varios archivos .js en los cuales estamos implementando 
   
   ## 🎯 Overview
   
-  
-  
-  "This is a project of an API REST on a university which needs to make various interactions between students, teachers and subjects"
+  "This is a project of an API REST on a university which needs to make various interactions between students, teachers and subjects."
   
   ## 🚀 Getting Started
   
