@@ -4,16 +4,10 @@ Este proyecto consta de dos archivos .js entre otros, los cuales nos explican o 
 
 <div align="center">
     
-  # Name
-  
-  <img src="https://api.dicebear.com/9.x/icons/svg?seed=Midnight&backgroundColor[]&icon=lightbulb" height="100" alt="avatar" />
-  
-  [Overview](#🎯-overview) •
-  [Features](#✨-features) •
-  [Getting Started](#🚀-getting-started) •
-  [Usage](#📘-usage) •
-  [API](#📚-api)
-  
+  # Authors
+
+  - [@Eduard Murillo](https://github.com/SoyEdu15)
+  - [@Darcy Sosa](https://github.com/dcsosag)
   </div>
   
   ---
