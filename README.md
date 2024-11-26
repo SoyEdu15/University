@@ -1,6 +1,6 @@
 # Archivos Utilizados en clase Programcion avanzada
 
-Este proyecto consta de dos archivos .js entre otros, los cuales nos explican o nos demuestran como usar correctamenete la sintaxis del lenguaje ademas lo podemos tomar como gia de estudio
+Este proyecto consta de varios archivos .js en los cuales estamos implementando express entre otras dependencias las cuales nos permiten realizar el proyecto que veras a continuación:
 
 <div align="center">
     
