@@ -34,7 +34,7 @@ Este proyecto consta de varios archivos .js en los cuales estamos implementando 
   1. Clone the repository:
   
      ```bash
-     git clone https://github.com/SoyEdu15/Univercidad.git
+     git clone https://github.com/SoyEdu15/University.git
      cd project-name
      ```
   
