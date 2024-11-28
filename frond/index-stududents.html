@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Estudiantes</h1>
+
+        <!-- Sección de búsqueda -->
+        <div class="search-container">
+            <input type="text" id="search-id" placeholder="Buscar por ID">
+            <button id="search-button" onclick="searchById()">Buscar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                <!-- Los estudiantes se llenarán aquí -->
+            </tbody>
+        </table>
+
+        <!-- Cargando mensaje -->
+        <div id="loading" style="display: none;">Cargando...</div>
+
+        <!-- Sección de añadir estudiante -->
+        <button class="añadir-botton" onclick="showAddForm()">Añadir Estudiante</button>
+
+        <!-- Sección de edición de estudiante -->
+        <div id="edit-form" style="display: none;">
+            <h2>Editar Estudiante</h2>
+            <form onsubmit="saveChanges(event)">
+                <input type="hidden" id="edit-id">
+                <label for="edit-name">Nombre:</label>
+                <input type="text" id="edit-name" required>
+                <label for="edit-address">Dirección:</label>
+                <input type="text" id="edit-address" required>
+                <label for="edit-phone">Teléfono:</label>
+                <input type="text" id="edit-phone" required>
+                <label for="edit-birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="edit-birthdate" required>
+                <button type="submit" id="save-changes">Guardar Cambios</button>
+            </form>
+            <button id="back-button" onclick="backToList()">Volver</button>
+        </div>
+
+        <!-- Sección de añadir estudiante -->
+        <div id="add-section" style="display: none;">
+            <h2>Añadir Estudiante</h2>
+            <form onsubmit="addStudent(event)">
+                <label for="add-id">ID:</label>
+                <input type="text" id="add-id" required>
+                <label for="add-name">Nombre:</label>
+                <input type="text" id="add-name" required>
+                <label for="add-address">Dirección:</label>
+                <input type="text" id="add-address" required>
+                <label for="add-phone">Teléfono:</label>
+                <input type="text" id="add-phone" required>
+                <label for="add-birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="add-birthdate" required>
+                <button type="submit" id="add-button">Añadir Estudiante</button>
+            </form>
+            <button id="back-button" onclick="backToList()">Volver</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
