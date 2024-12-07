@@ -64,7 +64,6 @@ const deleteProfessorData = async (req, res) => {
         // Respuesta exitosa
         return res.status(200).json({
             message: 'Profesor eliminado exitosamente',
-            data: deletedProfessor
         });
 
     } catch (error) {

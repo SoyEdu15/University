@@ -35,7 +35,7 @@ const updateProfessor = async (id_p, professor) => {
 const deleteProfessor = async (id_p) => {
     const query = 'SELECT * FROM Imparte WHERE id_p = $1';
     const { rows } = await db.query(query, [id_p]);
-    return rows; // Devuelve todas las asignaturas impartidas por el profesor
+    return rows; 
 };
 
 
