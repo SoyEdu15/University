@@ -1,6 +1,6 @@
 # Archivos Utilizados en clase Programcion avanzada
 
-Este proyecto consta de varios archivos .js en los cuales estamos implementando express entre otras dependencias las cuales nos permiten realizar el proyecto que veras a continuación:
+Este proyecto esata creado con Node.js es una API REST-FULL, donde podemos encontrar un eos optimo del CRUD 
 
 <div align="center">
     
