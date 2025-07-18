@@ -17,10 +17,10 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use('/api/profesores', professorsRoutes);
-app.use('/api/estudiantes', studentsRoutes);
-app.use('/api/asignaturas', asignaturasRoutes);
-app.use('/api/imparte', imparteRoutes);
+app.use('/api/professors', professorsRoutes);
+app.use('/api/students', studentsRoutes);
+app.use('/api/coures', asignaturasRoutes);
+app.use('/api/teaches', imparteRoutes);
 app.use('/api/inscribe', inscribeRoutes);
 
 const PORT = process.env.PORT || 3000;
